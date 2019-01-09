@@ -1,0 +1,42 @@
+$fmm: 'Montserrat', sans-serif;
+$fmc: 'Crimson Text', sans-serif;
+$fma: 'Amsdam cyr-lat', sans-serif;
+$fs: 8px;
+
+@font-face {
+    font-family: 'Amsdam cyr-lat';
+    src: url('../fonts/Amsdamcyr-lat.eot');
+    src: url('../fonts/Amsdamcyr-lat.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Amsdamcyr-lat.woff2') format('woff2'),
+        url('../fonts/Amsdamcyr-lat.woff') format('woff'),
+        url('../fonts/Amsdamcyr-lat.ttf') format('truetype'),
+        url('../fonts/Amsdamcyr-lat.svg#Amsdamcyr-lat') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*specification*/
+body{
+	margin: 0 auto;
+	padding: 0;
+	font-family: $fmc;
+	font-size: $fs*2;
+	color: #717171;
+}
+
+div, img{
+	box-sizing: border-box;
+}
+
+.img-gallery{
+	width: 100%;
+	height: auto;
+}
+
+ul, li{
+	display: block;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+@import 'index';
