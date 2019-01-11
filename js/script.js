@@ -5,7 +5,7 @@ $('.slide__testi').slick({
 });
 
 //navigator
-$('.menu__link').mPageScroll2id({
+$('.menu__link, .title__link').mPageScroll2id({
 	speed : 100,
 });
 $('.nav__link').mPageScroll2id({

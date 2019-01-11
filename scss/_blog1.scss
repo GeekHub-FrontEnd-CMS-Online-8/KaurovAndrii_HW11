@@ -1,0 +1,55 @@
+/*blog1*/
+.posts-title{
+	background-image: url(../img/bg-posts.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	padding: 70px 0;
+	text-align: center;
+}
+
+.title__caption--white{
+	color: #ffffff;
+}
+
+.posts{
+	padding: 30px 0;
+	background-color: #e3e3e3;
+}
+
+.post{
+	font-family: $fmc;
+	color: #3e3d3d;
+	margin: 50px 0;
+	&__title{
+		padding: 10px 0;
+		font-family: $fmm;
+		font-weight: bold;
+		font-size: $fs+10;
+	}
+	&__subtitle{
+		font-size: $fs+6;
+		font-style: italic;
+	}
+	&__text{
+		padding: 10px 0;
+		font-size: $fs+7;
+	}
+	&__img{
+		width: 100%;
+		height: auto;
+	}
+}
+
+.group{
+	padding: 10px;
+	border-top: 1px solid #8e8e8e;
+	border-bottom: 1px solid #8e8e8e;
+	color: #999999;
+	&__text{
+		margin-left: 5px;
+	}
+	&__icon{
+		margin-left: 20px;
+	}
+}
