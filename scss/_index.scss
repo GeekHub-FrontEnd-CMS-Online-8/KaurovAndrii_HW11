@@ -25,6 +25,13 @@
 	}
 }
 
+@media screen and (max-width: 720px){
+	.menu{
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
 .socbar{
 	&__link{
 		color: #cccccc;
@@ -36,26 +43,6 @@
 		border-right: 2px solid #cccccc;
 		padding-right: 3px;
 		}
-	}
-}
-
-.nav{
-	position: fixed;
-	margin-top: 20px;
-	background: #A5C2FF;
-	border-radius: 5px;
-	border: 1px solid #001D26;
-	&__link{
-		text-decoration: none;
-		font-size: $fs*3.5;
-		color: #D13C31;
-		&:hover{
-			color: #7ED152;
-			transition: 0.5s;
-		}
-	}
-	&__title{
-		color: #001D26;
 	}
 }
 
@@ -118,7 +105,6 @@
 }
 
 /*about*/
-
 .about{
 	background-color: #e3e3e3;
 }
@@ -160,8 +146,8 @@
 	margin: 50px 0;
 	text-align: center;
 	&__btn{
-		margin: 0 10px;
-		padding: 15px 35px;
+		margin: 40px 0;
+		padding: 10px 20px;
 		color: #3e3d3d;
 		font-weight: bold;
 		font-family: $fmm;
@@ -178,6 +164,7 @@
 .gallery{
 	padding: 30px 0 50px 0;
 	&__item{
+		margin: 20px 0;
 		color: #3e3d3d;
 		text-align: center;
 		text-transform: uppercase;
@@ -236,12 +223,11 @@
 }
 
 .service-box{
-	padding: 70px 0;
 	&__module{
   		position: relative;
   		border-radius: 5px;
   		padding: 50px 25px 20px 25px;
-  		margin: 0 5px;
+  		margin: 20px;
  		box-sizing: padding-box;
  		position: relative;
   		border-right: 2px solid #898989;
@@ -328,6 +314,7 @@
 
 .member{
 	position: relative;
+	margin-bottom: 20px;
 	&:hover .member__info{
 		opacity: 1;
 		top: 10px;
@@ -360,17 +347,24 @@
 	}
 }
 
+/*portfolio-img*/
+@media screen and (max-width: 720px){
+	.pictures-portfolio{
+		flex-direction: column;
+	}
+	.picture{
+		display: flex;
+		width: 50%;
+	}
+}
+
 /*prices*/
 .prices{
 	background: #e3e3e3;
 }
 
-.prices-plans{
-	display: flex;
-	padding-bottom: 50px;
-}
-
 .plan{
+	margin-bottom: 20px;
 	padding: 20px 20px 50px 20px;
 	background: #ffffff;
 	text-align: center;
@@ -415,6 +409,7 @@
 /*looking*/
 .looking{
 	background-color: #2d2d2f;
+	padding: 50px 0;
 }
 
 .compass-content{
@@ -452,13 +447,13 @@
 
 .blog__img{
 	width: 100%;
-	height: 50%;
+	height: auto;;
 }
 
 .blog-content{
 	padding: 30px;
 	width: 100%;
-	height: 50%;
+	height: auto;
 	color: #e3e3e3;
 	&__subtitle{
 		font-style: italic;
@@ -477,6 +472,15 @@
 	&__text{
 		font-size: $fs+6;
 		color: #898989;
+	}
+}
+
+@media screen and (max-width: 720px){
+	.blog-column{
+		width: 100%;
+		&--width{
+			flex-direction: column;
+		}
 	}
 }
 
@@ -567,7 +571,9 @@
 	}
 }
 
-/*media*/
-@media screen and (max-width: 720px){
-	
+.clients {
+	& img {
+		width: 20%;
+		height: auto;
+	}
 }
